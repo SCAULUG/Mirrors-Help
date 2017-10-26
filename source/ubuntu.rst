@@ -15,7 +15,7 @@ AMD64 (x86_64), Intel x86
 使用说明
 ========
 
-编辑 /etc/apt/sources.list 文件
+编辑  /etc/apt/sources.list  文件
 
 执行 ``sudo sed -i 's/cn.archive.ubuntu.com/mirrors.scau.edu.cn/g' /etc/apt/sources.list`` 
 

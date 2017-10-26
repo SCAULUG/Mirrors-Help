@@ -13,6 +13,7 @@ https://mirrors.scau.edu.cn/centos/
 i686, x86_64
 
 收录版本
+========
 
 5,6,7
 
