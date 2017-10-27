@@ -10,7 +10,7 @@ https://mirrors.scau.edu.cn/ubuntu/
 收录架构
 ========
 
-AMD64 (x86_64), Intel x86
+AMD64 (x86_64), i3686
 
 使用说明
 ========
