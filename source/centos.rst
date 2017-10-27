@@ -10,7 +10,7 @@ https://mirrors.scau.edu.cn/centos/
 收录架构
 ========
 
-i686, x86_64
+i386, x86_64
 
 收录版本
 ========
