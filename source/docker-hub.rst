@@ -2,19 +2,19 @@
 Docker Hub 源使用帮助
 =====================
 
+镜像说明
+======
+
+Docker Hub 镜像缓存
+
 地址
 ====
 
 https://mirrors.scau.edu.cn:5000/
 
-说明
-====
-
-Docker Hub 镜像缓存
 
 使用说明
 ========
-
 
 Linux下 修改配置文件 ``/etc/docker/daemon.json``
 Windows下 修改配置文件 ``%programdata%\docker\config\daemon.json``
@@ -27,11 +27,7 @@ Windows下 修改配置文件 ``%programdata%\docker\config\daemon.json``
       "registry-mirrors": ["https://mirrors.scau.edu.cn:5000"]
     }
 	
-重新启动docker：
-
-::
-
-  sudo service docker restart
+重启docker服务后生效
 
 相关链接
 ========
