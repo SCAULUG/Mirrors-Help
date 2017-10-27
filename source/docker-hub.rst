@@ -27,7 +27,7 @@ Windows下 修改配置文件 ``%programdata%\docker\config\daemon.json``
       "registry-mirrors": ["https://mirrors.scau.edu.cn:5000"]
     }
 	
-重新启动dockerd：
+重新启动docker：
 
 ::
 
