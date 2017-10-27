@@ -19,7 +19,7 @@ Docker Hub 镜像缓存
 Linux下 修改配置文件 ``/etc/docker/daemon.json``
 Windows下 修改配置文件 ``%programdata%\docker\config\daemon.json``
 
-在该配置文件中加入（没有就新建一个）：
+在配置文件中加入（没有就新建一个）：
 
 ::
 
