@@ -37,7 +37,7 @@ https://mirrors.scau.edu.cn/epel/
   
   mv /etc/yum.repos.d/epel.repo /etc/yum.repos.d/epel.repo.bak
 
-任何编辑 ``/etc/yum.repos.d/epel.repo`` 文件,将其改为如下配置：
+编辑 ``/etc/yum.repos.d/epel.repo`` 文件,将其改为如下配置：
 
 ::
 
