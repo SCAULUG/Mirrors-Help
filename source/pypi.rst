@@ -25,10 +25,9 @@ Windows 用户修改配置文件 ``%HOME%\pip\pip.ini`` (没有就新建一个)
 
   [global]
   index-url = https://mirrors.scau.edu.cn/pypi/web/simple
-  
+ 
 相关链接
 ========
-
 :PyPI Official Mirrors: https://pypi.python.org/mirrors
 :PEP-381 Mirroring Protocol: http://www.python.org/dev/peps/pep-0381/
-:bandersnatch: https://pypi.python.org/pypi/bandersnatch
+:bandersnatch: https://pypi.python.org/pypi/bandersnatch 
