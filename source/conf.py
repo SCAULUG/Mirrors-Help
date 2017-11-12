@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'mirrors_help'
+project = 'SCAU Mirrors Help'
 copyright = '2017, SCAULUG'
 author = 'SCAULUG'
 
