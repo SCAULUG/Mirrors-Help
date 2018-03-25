@@ -21,6 +21,8 @@ https://mirrors.scau.edu.cn/anaconda/
 
 Anaconda 安装包可以到 ``https://mirrors.scau.edu.cn/anaconda/archive/`` 下载。
 
+Miniconda 安装包可以到 ``https://mirrors.scau.edu.cn/anaconda/miniconda/`` 下载。
+
 也可以运行以下命令添加 Anaconda Python 免费仓库：
 
 ::
@@ -33,7 +35,8 @@ Anaconda 安装包可以到 ``https://mirrors.scau.edu.cn/anaconda/archive/`` �
 
 添加完后可运行 ``conda install numpy`` 进行测试
 
-Miniconda 安装包可以到 ``https://mirrors.scau.edu.cn/anaconda/miniconda/`` 下载。
+
+可以根据需求添加 第三房源：
 
 - Conda Forge 
 
@@ -68,7 +71,7 @@ Miniconda 安装包可以到 ``https://mirrors.scau.edu.cn/anaconda/miniconda/``
 
 
 相关链接
-======
+========
 
-: 官方主页: https://www.continuum.io/
+:官方主页: https://www.continuum.io/
 
