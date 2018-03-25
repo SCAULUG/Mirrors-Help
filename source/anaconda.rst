@@ -64,7 +64,7 @@ Miniconda 安装包可以到 ``https://mirrors.scau.edu.cn/anaconda/miniconda/``
 
 - menpo 
 
- ::
+::
 
   conda config --add channels https://mirrors.scau.edu.cn/anaconda/cloud/menpo/
 
