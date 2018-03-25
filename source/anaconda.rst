@@ -5,11 +5,9 @@ Anaconda 源使用帮助
 镜像说明
 =======
 
-Anaconda 是一个用于科学计算的 Python 发行版，支持 Linux, Mac, Windows, 包含了众多流行的科学计算、数据分析的 
+**Anaconda** 是一个用于科学计算的 Python 发行版，支持 Linux、Mac、Windows 包含了众多流行的科学计算、数据分析的 Python 包。它有着可以和 PyPI 协作的独立包管理系统 conda ，可以通过不同于 PyPI 的源进行许多 Python 包的安装。
 
-Python 包。它有着可以和 PyPI 协作的独立包管理系统 conda ，可以通过不同于 PyPI 的源进行许多 Python 包的安装。
-
-此镜像还包含了 MiniConda 镜像和一些第三方源，包括 Conda Forge, msys2, bioconda 和 menpo 。
+此镜像还包含了 **MiniConda** 镜像和一些第三方源，包括 **Conda Forge** 、**msys2** 、**bioconda** 和 **menpo** 。
 
 地址
 ====
