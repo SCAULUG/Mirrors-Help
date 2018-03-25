@@ -27,8 +27,8 @@ Miniconda 安装包可以到 ``https://mirrors.scau.edu.cn/anaconda/miniconda/``
 
 ::
 
-   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+   conda config --add channels https://mirrors.scau.edu.cn/anaconda/pkgs/free/
+   conda config --add channels https://mirrors.scau.tsinghua.edu.cn/anaconda/pkgs/main/
    conda config --set show_channel_urls yes
 
 
