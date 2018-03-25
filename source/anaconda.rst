@@ -36,7 +36,7 @@ Miniconda 安装包可以到 ``https://mirrors.scau.edu.cn/anaconda/miniconda/``
 添加完后可运行 ``conda install numpy`` 进行测试
 
 
-可以根据需求添加 第三房源：
+可以添加第三方源：
 
 - Conda Forge 
 
