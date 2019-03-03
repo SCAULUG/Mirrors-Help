@@ -23,7 +23,7 @@ armhf
 收录版本
 ========
 
-wheezy，jessie
+wheezy，jessie，stretch
 
 
 使用说明
@@ -37,6 +37,13 @@ wheezy，jessie
 
 新建 ``/etc/apt/sources.list`` 文件，并根据版本加入对应内容：
 
+**Debian 9 stretch**
+
+::
+  
+  deb http://mirrors.scau.edu.cn/raspbian/raspbian/ stretch main non-free contrib
+  deb-src http://mirrors.scau.edu.cn/raspbian/raspbian/ stretch main non-free contrib
+  
 **Debian 8 jessie**
 
 ::
