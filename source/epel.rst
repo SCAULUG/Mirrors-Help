@@ -43,7 +43,7 @@ https://mirrors.scau.edu.cn/epel/
 
     [epel]
     name=Extra Packages for Enterprise Linux 7 - $basearch
-    baseurl=http://mirrors.scau.edu.cn/epel/7/$basearch
+    baseurl=https://mirrors.scau.edu.cn/epel/7/$basearch
     #mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-7&arch=$basearch
     failovermethod=priority
     enabled=1
@@ -52,7 +52,7 @@ https://mirrors.scau.edu.cn/epel/
 
     [epel-debuginfo]
     name=Extra Packages for Enterprise Linux 7 - $basearch - Debug
-    baseurl=http://mirrors.scau.edu.cn/epel/7/$basearch/debug
+    baseurl=https://mirrors.scau.edu.cn/epel/7/$basearch/debug
     #mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-debug-7&arch=$basearch
     failovermethod=priority
     enabled=0
@@ -61,7 +61,7 @@ https://mirrors.scau.edu.cn/epel/
 
     [epel-source]
     name=Extra Packages for Enterprise Linux 7 - $basearch - Source
-    baseurl=http://mirrors.scau.edu.cn/epel/7/SRPMS
+    baseurl=https://mirrors.scau.edu.cn/epel/7/SRPMS
     #mirrorlist=https://mirrors.fedoraproject.org/metalink?repo=epel-source-7&arch=$basearch
     failovermethod=priority
     enabled=0
