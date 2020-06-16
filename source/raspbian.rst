@@ -18,12 +18,12 @@ https://mirrors.scau.edu.cn/raspbian/
 收录架构
 ========
 
-armhf
+armhf，arm64
 
 收录版本
 ========
 
-wheezy，jessie，stretch
+wheezy，jessie，stretch，buster
 
 
 使用说明
@@ -39,26 +39,33 @@ wheezy，jessie，stretch
 
 新建 ``/etc/apt/sources.list`` 文件，并根据版本加入对应内容：
 
+**Debian 10 buster**
+
+::
+  
+  deb https://mirrors.scau.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
+  deb-src https://mirrors.scau.edu.cn/raspbian/raspbian/ buster main non-free contrib rpi
+
 **Debian 9 stretch**
 
 ::
   
-  deb https://mirrors.scau.edu.cn/raspbian/raspbian/ stretch main non-free contrib
-  deb-src https://mirrors.scau.edu.cn/raspbian/raspbian/ stretch main non-free contrib
+  deb https://mirrors.scau.edu.cn/raspbian/raspbian/ stretch main non-free contrib rpi
+  deb-src https://mirrors.scau.edu.cn/raspbian/raspbian/ stretch main non-free contrib rpi
   
 **Debian 8 jessie**
 
 ::
   
-  deb https://mirrors.scau.edu.cn/raspbian/raspbian/ jessie main non-free contrib
-  deb-src https://mirrors.scau.edu.cn/raspbian/raspbian/ jessie main non-free contrib
+  deb https://mirrors.scau.edu.cn/raspbian/raspbian/ jessie main non-free contrib rpi
+  deb-src https://mirrors.scau.edu.cn/raspbian/raspbian/ jessie main non-free contrib rpi
 
 **Debian 7 wheezy**
 
 ::
   
-  deb https://mirrors.scau.edu.cn/raspbian/raspbian/ wheezy main non-free contrib
-  deb-src https://mirrors.scau.edu.cn/raspbian/raspbian/ wheezy main non-free contrib
+  deb https://mirrors.scau.edu.cn/raspbian/raspbian/ wheezy main non-free contrib rpi
+  deb-src https://mirrors.scau.edu.cn/raspbian/raspbian/ wheezy main non-free contrib rpi
 
 最后执行 ``sudo apt-get update`` 更新软件源
 
@@ -75,25 +82,32 @@ Raspberrypi 源使用帮助
 
 新建 ``/etc/apt/sources.list.d/raspi.list`` 文件，并根据版本加入对应内容：
 
+**Debian 10 buster**
+
+::
+  
+  deb https://mirrors.scau.edu.cn/raspberrypi/ buster main ui
+  #deb-src https://mirrors.scau.edu.cn/raspberrypi/ buster main ui
+
 **Debian 9 stretch**
 
 ::
   
-  deb https://mirrors.scau.edu.cn/raspberrypi/ stretch main
-  deb-src https://mirrors.scau.edu.cn/raspberrypi/ stretch main
+  deb https://mirrors.scau.edu.cn/raspberrypi/ stretch main ui
+  #deb-src https://mirrors.scau.edu.cn/raspberrypi/ stretch main ui
   
 **Debian 8 jessie**
 
 ::
   
-  deb https://mirrors.scau.edu.cn/raspberrypi/ jessie main
-  deb-src https://mirrors.scau.edu.cn/raspberrypi/ jessie main
+  deb https://mirrors.scau.edu.cn/raspberrypi/ jessie main ui
+  #deb-src https://mirrors.scau.edu.cn/raspberrypi/ jessie main ui
 
 **Debian 7 wheezy**
 
 ::
   
-  deb https://mirrors.scau.edu.cn/raspberrypi/ wheezy main
-  deb-src https://mirrors.scau.edu.cn/raspberrypi/ wheezy main
+  deb https://mirrors.scau.edu.cn/raspberrypi/ wheezy main ui
+  #deb-src https://mirrors.scau.edu.cn/raspberrypi/ wheezy main ui
 
 最后执行 ``sudo apt-get update`` 更新软件源
