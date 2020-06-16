@@ -35,9 +35,18 @@ https://mirrors.scau.edu.cn/epel/
 
 ::
   
-  mv /etc/yum.repos.d/epel.repo /etc/yum.repos.d/epel.repo.bak
+  cp /etc/yum.repos.d/epel.repo /etc/yum.repos.d/epel.repo.bak
 
-编辑 ``/etc/yum.repos.d/epel.repo`` 文件,将其改为如下配置：
+执行以下命令：
+
+::
+  
+  sudo sed -e 's|^metalink=|#metalink=|g' \
+           -e 's|^#baseurl=https\?://download.fedoraproject.org/pub/epel/|baseurl=https://mirrors.ustc.edu.cn/epel/|g' \
+           -i.bak \
+           /etc/yum.repos.d/epel.repo
+
+修改后的 ``/etc/yum.repos.d/epel.repo`` 文件如下(因Linux版本不同有所差异)：
 
 ::
 
