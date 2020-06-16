@@ -42,7 +42,7 @@ https://mirrors.scau.edu.cn/epel/
 ::
   
   sudo sed -e 's|^metalink=|#metalink=|g' \
-           -e 's|^#baseurl=https\?://download.fedoraproject.org/pub/epel/|baseurl=https://mirrors.ustc.edu.cn/epel/|g' \
+           -e 's|^#baseurl=https\?://download.fedoraproject.org/pub/epel/|baseurl=https://mirrors.scau.edu.cn/epel/|g' \
            -i.bak \
            /etc/yum.repos.d/epel.repo
 
