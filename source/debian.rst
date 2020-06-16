@@ -19,8 +19,8 @@ Debian 支持的所有架构，如 AMD64 (x86_64), Intel x86, ARM, MIPS, ppc64el
 
 Debian Old Stable, Stable(稳定版), Testing(测试版), Unstable(不稳定版)
 
-当前 Stable 为 Debian 9，代号为 Stretch。
-当前的”测试版“版本代号是 buster。
+当前 Stable 为 Debian 10，代号为 buster。
+当前的”测试版“版本代号是 bullseye。
 ”不稳定版“的版本代号永远都被称为 sid。
 
 有关发行版信息可以查看 Debian 官网说明：https://www.debian.org/releases/index.zh-tw.html
