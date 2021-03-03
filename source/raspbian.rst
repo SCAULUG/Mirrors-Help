@@ -18,7 +18,7 @@ https://mirrors.scau.edu.cn/raspbian/
 收录架构
 ========
 
-armhf，arm64
+armhf
 
 收录版本
 ========
@@ -71,6 +71,19 @@ wheezy，jessie，stretch，buster
 
 同时也需要更改 archive.raspberrypi.org 源
 
+相关链接
+========
+
+Raspbian 链接
+  :Raspbian 主页: http://www.raspbian.org/
+  :文档: http://www.raspbian.org/RaspbianDocumentation
+  :Bug Tracker: http://www.raspbian.org/RaspbianBugs
+  :镜像列表: http://www.raspbian.org/RaspbianMirrors
+
+树莓派链接
+  :树莓派基金会主页: https://www.raspberrypi.org/
+  :树莓派基金会论坛 Raspberry Pi OS 版块: https://www.raspberrypi.org/forums/viewforum.php?f=66
+
 Raspberrypi 源使用帮助
 ======================
 
@@ -111,3 +124,10 @@ Raspberrypi 源使用帮助
   #deb-src https://mirrors.scau.edu.cn/raspberrypi/ wheezy main ui
 
 最后执行 ``sudo apt-get update`` 更新软件源
+
+相关链接
+========
+
+:官方主页: https://www.raspberrypi.org/
+:文档: https://www.raspberrypi.org/documentation/
+

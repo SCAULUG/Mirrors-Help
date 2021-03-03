@@ -12,6 +12,7 @@ Linux 发行版镜像
    centos
    debian
    epel
+   proxmox
    raspbian
    ubuntu
    ubuntu-cdimage

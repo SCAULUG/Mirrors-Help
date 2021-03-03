@@ -10,7 +10,12 @@ https://mirrors.scau.edu.cn/ubuntu/
 收录架构
 ========
 
-AMD64 (x86_64), i3686
+AMD64 (x86_64), Intel x86
+
+收录版本
+========
+
+所有 Ubuntu 当前支持的版本，包括开发版，具体版本见 https://wiki.ubuntu.com/Releases
 
 使用说明
 ========
@@ -37,6 +42,40 @@ AMD64 (x86_64), i3686
 最后执行 ``sudo apt-get update`` 更新软件源列表
 
 也可以直接编辑 :file:`/etc/apt/sources.list` 文件（需要使用 sudo）。以下是 Ubuntu 各版本参考配置内容：
+
+::
+  
+    # Ubuntu 20.10
+    # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+    deb https://mirrors.scau.edu.cn/ubuntu/ groovy main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ groovy main restricted universe multiverse
+    deb https://mirrors.scau.edu.cn/ubuntu/ groovy-updates main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ groovy-updates main restricted universe multiverse
+    deb https://mirrors.scau.edu.cn/ubuntu/ groovy-backports main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ groovy-backports main restricted universe multiverse
+    deb https://mirrors.scau.edu.cn/ubuntu/ groovy-security main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ groovy-security main restricted universe multiverse
+
+    # 预发布软件源，不建议启用
+    # deb https://mirrors.scau.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
+
+::
+  
+    # Ubuntu 20.04 LTS
+    # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+    deb https://mirrors.scau.edu.cn/ubuntu/ focal main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ focal main restricted universe multiverse
+    deb https://mirrors.scau.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+    deb https://mirrors.scau.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+    deb https://mirrors.scau.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+    # 预发布软件源，不建议启用
+    # deb https://mirrors.scau.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ focal-proposed main restricted universe multiverse
 
 ::
   
@@ -88,125 +127,6 @@ AMD64 (x86_64), i3686
     # 预发布软件源，不建议启用
     # deb https://mirrors.scau.edu.cn/ubuntu/ trusty-proposed main restricted universe multiverse
     # deb-src https://mirrors.scau.edu.cn/ubuntu/ trusty-proposed main restricted universe multiverse
-
-::
-  
-    # Ubuntu 12.04 LTS
-    # 默认注释了源码仓库，如有需要可自行取消注释
-    deb https://mirrors.scau.edu.cn/ubuntu/ precise main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ precise main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ precise-updates main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ precise-updates main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ precise-backports main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ precise-backports main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ precise-security main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ precise-security main restricted universe multiverse
-
-    # 预发布软件源，不建议启用
-    # deb https://mirrors.scau.edu.cn/ubuntu/ precise-proposed main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ precise-proposed main restricted universe multiverse
-
-::
-  
-    # Ubuntu 18.10
-    # 默认注释了源码仓库，如有需要可自行取消注释
-    deb https://mirrors.scau.edu.cn/ubuntu/ cosmic main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ cosmic main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ cosmic-updates main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ cosmic-updates main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ cosmic-backports main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ cosmic-backports main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ cosmic-security main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ cosmic-security main restricted universe multiverse
-
-    # 预发布软件源，不建议启用
-    # deb https://mirrors.scau.edu.cn/ubuntu/ cosmic-proposed main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ cosmic-proposed main restricted universe multiverse
-
-::
-  
-    # Ubuntu 17.10
-    # 默认注释了源码仓库，如有需要可自行取消注释
-    deb https://mirrors.scau.edu.cn/ubuntu/ artful main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ artful main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ artful-updates main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ artful-updates main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ artful-backports main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ artful-backports main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ artful-security main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ artful-security main restricted universe multiverse
-
-    # 预发布软件源，不建议启用
-    # deb https://mirrors.scau.edu.cn/ubuntu/ artful-proposed main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ artful-proposed main restricted universe multiverse
-
-::
-  
-    # Ubuntu 17.04
-    # 默认注释了源码仓库，如有需要可自行取消注释
-    deb https://mirrors.scau.edu.cn/ubuntu/ zesty main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ zesty main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ zesty-updates main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ zesty-updates main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ zesty-backports main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ zesty-backports main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ zesty-security main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ zesty-security main restricted universe multiverse
-
-    # 预发布软件源，不建议启用
-    # deb https://mirrors.scau.edu.cn/ubuntu/ zesty-proposed main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ zesty-proposed main restricted universe multiverse
-
-::
-  
-    # Ubuntu 16.10
-    # 默认注释了源码仓库，如有需要可自行取消注释
-    deb https://mirrors.scau.edu.cn/ubuntu/ yakkety main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ yakkety main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ yakkety-updates main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ yakkety-updates main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ yakkety-backports main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ yakkety-backports main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ yakkety-security main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ yakkety-security main restricted universe multiverse
-
-    # 预发布软件源，不建议启用
-    # deb https://mirrors.scau.edu.cn/ubuntu/ yakkety-proposed main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ yakkety-proposed main restricted universe multiverse
-
-::
-  
-    # Ubuntu 15.10
-    # 默认注释了源码仓库，如有需要可自行取消注释
-    deb https://mirrors.scau.edu.cn/ubuntu/ wily main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ wily main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ wily-updates main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ wily-updates main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ wily-backports main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ wily-backports main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ wily-security main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ wily-security main restricted universe multiverse
-
-    # 预发布软件源，不建议启用
-    # deb https://mirrors.scau.edu.cn/ubuntu/ wily-proposed main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ wily-proposed main restricted universe multiverse
-
-::
-  
-    # Ubuntu 15.04
-    # 默认注释了源码仓库，如有需要可自行取消注释
-    deb https://mirrors.scau.edu.cn/ubuntu/ vivid main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ vivid main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ vivid-updates main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ vivid-updates main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ vivid-backports main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ vivid-backports main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ vivid-security main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ vivid-security main restricted universe multiverse
-
-    # 预发布软件源，不建议启用
-    # deb https://mirrors.scau.edu.cn/ubuntu/ vivid-proposed main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ vivid-proposed main restricted universe multiverse
 
 相关链接
 ========

@@ -47,7 +47,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'SCAU Mirrors Help'
-copyright = '2017 - 2020, SCAULUG'
+copyright = '2017 - 2021, SCAULUG'
 author = 'SCAULUG'
 
 # The version info for the project you're documenting, acts as replacement for
