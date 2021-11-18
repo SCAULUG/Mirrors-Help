@@ -17,6 +17,8 @@ AMD64 (x86_64), Intel x86
 
 所有 Ubuntu 当前支持的版本，包括开发版，具体版本见 https://wiki.ubuntu.com/Releases
 
+对于 Ubuntu 不再支持的版本，请参考 Ubuntu Old Releases 源使用帮助
+
 使用说明
 ========
 
