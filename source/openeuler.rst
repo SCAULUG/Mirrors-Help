@@ -40,10 +40,10 @@ openEuler 源包含多个版本，假定您需要使用 openEuler-20.09 版本�
     gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/everything/$basearch/RPM-GPG-KEY-openEuler
     [EPOL]
     name=EPOL
-    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/EPOL/$basearch/
+    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/EPOL/main/$basearch/
     enabled=1
     gpgcheck=1
-    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/EPOL/$basearch/RPM-GPG-KEY-openEuler
+    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/OS/$basearch/RPM-GPG-KEY-openEuler
     [debuginfo]
     name=debuginfo
     baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/debuginfo/$basearch/
