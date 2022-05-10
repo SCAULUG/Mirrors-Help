@@ -23,7 +23,13 @@ armhf
 收录版本
 ========
 
-wheezy，jessie，stretch，buster
+stretch (oldoldstable)
+
+buster (oldstable)
+
+bullseye (stable)
+
+bookworm (testing)
 
 
 使用说明
