@@ -35,7 +35,7 @@ openEuler 源包含多个版本，假定您使用的是 openEuler-22.03-LTS 版�
 
 ::
   
-sudo sed -i s#http://repo.openeuler.org#https://mirrors.scau.edu.cn/openeuler#g /etc/yum.repos.d/openEuler.repo
+  sudo sed -i s#http://repo.openeuler.org#https://mirrors.scau.edu.cn/openeuler#g /etc/yum.repos.d/openEuler.repo
 
 修改后的 ``/etc/yum.repos.d/openEuler.repo`` 文件如下(以 openEuler-22.03-LTS 为例)：
 

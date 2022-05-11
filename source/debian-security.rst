@@ -1,6 +1,6 @@
-=========================
+===========================
 Debian Security 源使用帮助
-=========================
+===========================
 
 地址
 ====
@@ -25,7 +25,7 @@ Debian Old Old Stable, Old Stable, Stable
 使用须知
 =========
 
-本站（华南农业大学开源镜像源）Debian Security 源的直接上游为`科大开源软件镜像站<https://mirrors.ustc.edu.cn/debian-security/>`_，且镜像同步时间为每日凌晨一点，对debian-security官方源的同步不一定及时。因此，用户如需尽快获取安全更新，应该直接使用官方源 http://security.debian.org/debian-security 进行安全更新。
+本站（华南农业大学开源镜像源）Debian Security 源的直接上游为 `科大开源软件镜像站<https://mirrors.ustc.edu.cn/debian-security/>`_，且镜像同步时间为每日凌晨一点，对debian-security官方源的同步不一定及时。因此，用户如需尽快获取安全更新，应该直接使用官方源 http://security.debian.org/debian-security 进行安全更新。
 
 
 使用说明
