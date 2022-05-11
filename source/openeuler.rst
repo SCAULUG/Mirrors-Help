@@ -22,43 +22,65 @@ x86_64，aarch64
 使用说明
 ========
 
-openEuler 源包含多个版本，假定您需要使用 openEuler-20.09 版本，在 yum 源目录(``/etc/yum.repos.d/``)下新增 ``openEuler.repo`` 文件，注意文件中的 openEuler-20.09 路径
+openEuler 源包含多个版本，假定您使用的是 openEuler-22.03-LTS 版本，在操作前首先备份 ``/etc/yum.repos.d/openEuler.repo`` 文件：
+
+::
+  
+  sudo cp /etc/yum.repos.d/openEuler.repo /etc/yum.repos.d/openEuler.repo.bak
+
+一般情况下，将 :file:`/etc/yum.repos.d/openEuler.repo` 文件中 openEuler 默认的源地址 ``http://repo.openeuler.org/``
+替换为 ``https://mirrors.scau.edu.cn/openeuler/`` 即可
+
+可以使用如下命令进行替换：
+
+::
+  
+sudo sed -i s#http://repo.openeuler.org#https://mirrors.scau.edu.cn/openeuler#g /etc/yum.repos.d/openEuler.repo
+
+修改后的 ``/etc/yum.repos.d/openEuler.repo`` 文件如下(以 openEuler-22.03-LTS 为例)：
 
 ::
 
     [OS]
     name=OS
-    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/OS/$basearch/
+    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/OS/$basearch/
     enabled=1
     gpgcheck=1
-    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/OS/$basearch/RPM-GPG-KEY-openEuler
+    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/OS/$basearch/RPM-GPG-KEY-openEuler
     [everything]
     name=everything
-    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/everything/$basearch/
+    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/everything/$basearch/
     enabled=1
     gpgcheck=1
-    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/everything/$basearch/RPM-GPG-KEY-openEuler
+    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/everything/$basearch/RPM-GPG-KEY-openEuler
     [EPOL]
     name=EPOL
-    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/EPOL/$basearch/
+    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/EPOL/main/$basearch/
     enabled=1
     gpgcheck=1
-    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/EPOL/$basearch/RPM-GPG-KEY-openEuler
+    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/OS/$basearch/RPM-GPG-KEY-openEuler
     [debuginfo]
     name=debuginfo
-    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/debuginfo/$basearch/
+    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/debuginfo/$basearch/
     enabled=1
     gpgcheck=1
-    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/debuginfo/$basearch/RPM-GPG-KEY-openEuler
+    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/debuginfo/$basearch/RPM-GPG-KEY-openEuler
     [source]
     name=source
-    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/source/
+    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/source/
     enabled=1
     gpgcheck=1
-    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-20.09/source/RPM-GPG-KEY-openEuler
+    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/source/RPM-GPG-KEY-openEuler
+    [update]
+    name=update
+    baseurl=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/update/$basearch/
+    enabled=1
+    gpgcheck=1
+    gpgkey=https://mirrors.scau.edu.cn/openeuler/openEuler-22.03-LTS/OS/$basearch/RPM-GPG-KEY-openEuler
 
 
 正常执行 ``yum update`` 和 ``yum install`` 即可，如果您在使用的过程中遇到任何问题，可以直接联系 openEuler社区 `admin@openeuler.io <admin@openeuler.io>`_ 或向 SCAULUG 提交 Issue。
+
 
 相关链接
 ========

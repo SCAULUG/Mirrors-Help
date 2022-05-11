@@ -42,13 +42,13 @@ Debian Old Stable, Stable(稳定版), Testing(测试版), Unstable(不稳定版)
   sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
 一般情况下，将 :file:`/etc/apt/sources.list` 文件中 Debian 默认的源地址 ``http://deb.debian.org/``
-替换为 ``https://mirrors.scau.edu.cn`` 即可
+替换为 ``https://mirrors.scau.edu.cn/`` 即可
 
 可以使用如下命令进行替换：
 
 ::
 
-  sudo sed -i 's/deb.debian.org/mirrors.scau.edu.cn/g' /etc/apt/sources.list
+  sudo sed -i 's#http://deb.debian.org#https://mirrors.scau.edu.cn#g' /etc/apt/sources.list
 
 也可以直接编辑 :file:`/etc/apt/sources.list` 文件（需要使用 sudo）。以下是 Debian Stable 参考配置内容：
 
@@ -62,6 +62,8 @@ Debian Old Stable, Stable(稳定版), Testing(测试版), Unstable(不稳定版)
 
     # deb https://mirrors.scau.edu.cn/debian stable-proposed-updates main contrib non-free
     # deb-src https://mirrors.scau.edu.cn/debian stable-proposed-updates main contrib non-free
+
+如果同时需要更改 Debian Security 源，请参考 Debian Security 源使用帮助
 
 替换后执行 ``sudo apt-get update`` 更新软件源列表
 

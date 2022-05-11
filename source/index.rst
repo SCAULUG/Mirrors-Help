@@ -11,10 +11,12 @@ Linux 发行版镜像
    archlinux
    centos
    debian
+   debian-security
    epel
    openeuler
    proxmox
    raspbian
+   termux
    ubuntu
    ubuntu-cdimage
 

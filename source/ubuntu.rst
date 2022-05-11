@@ -17,8 +17,6 @@ AMD64 (x86_64), Intel x86
 
 所有 Ubuntu 当前支持的版本，包括开发版，具体版本见 https://wiki.ubuntu.com/Releases
 
-对于 Ubuntu 不再支持的版本，请参考 Ubuntu Old Releases 源使用帮助
-
 使用说明
 ========
 
@@ -47,20 +45,20 @@ AMD64 (x86_64), Intel x86
 
 ::
   
-    # Ubuntu 20.10
+    # Ubuntu 22.04 LTS
     # 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
-    deb https://mirrors.scau.edu.cn/ubuntu/ groovy main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ groovy main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ groovy-updates main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ groovy-updates main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ groovy-backports main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ groovy-backports main restricted universe multiverse
-    deb https://mirrors.scau.edu.cn/ubuntu/ groovy-security main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ groovy-security main restricted universe multiverse
+    deb https://mirrors.scau.edu.cn/ubuntu/ jammy main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ jammy main restricted universe multiverse
+    deb https://mirrors.scau.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+    deb https://mirrors.scau.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ jammy-backports main restricted universe multiverse
+    deb https://mirrors.scau.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
 
     # 预发布软件源，不建议启用
-    # deb https://mirrors.scau.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
-    # deb-src https://mirrors.scau.edu.cn/ubuntu/ groovy-proposed main restricted universe multiverse
+    # deb https://mirrors.scau.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
+    # deb-src https://mirrors.scau.edu.cn/ubuntu/ jammy-proposed main restricted universe multiverse
 
 ::
   

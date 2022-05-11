@@ -35,7 +35,7 @@ https://mirrors.scau.edu.cn/epel/
 
 ::
   
-  cp /etc/yum.repos.d/epel.repo /etc/yum.repos.d/epel.repo.bak
+  sudo cp /etc/yum.repos.d/epel.repo /etc/yum.repos.d/epel.repo.bak
 
 执行以下命令：
 
@@ -43,6 +43,7 @@ https://mirrors.scau.edu.cn/epel/
   
   sudo sed -e 's|^metalink=|#metalink=|g' \
            -e 's|^#baseurl=https\?://download.fedoraproject.org/pub/epel/|baseurl=https://mirrors.scau.edu.cn/epel/|g' \
+           -e 's|^#baseurl=https\?://download.example/pub/epel/|baseurl=https://mirrors.scau.edu.cn/epel/|g' \
            -i.bak \
            /etc/yum.repos.d/epel.repo
 
